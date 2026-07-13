@@ -1,0 +1,90 @@
+/* 轻盘 - 组件样式 */
+
+/* 按钮 */
+.btn{display:inline-block;padding:8px 16px;font-size:14px;font-weight:500;line-height:1.5;text-align:center;white-space:nowrap;vertical-align:middle;border:1px solid transparent;border-radius:4px;text-decoration:none;-webkit-transition:all .2s;transition:all .2s;-webkit-user-select:none;user-select:none}
+.btn:hover{text-decoration:none}
+.btn:active{-webkit-transform:scale(.97);transform:scale(.97)}
+.btn-primary{background:#2196F3;color:#fff;border-color:#2196F3}
+.btn-primary:hover{background:#1976D2;border-color:#1976D2;color:#fff}
+.btn-secondary{background:#fff;color:#666;border-color:#ddd}
+.btn-secondary:hover{background:#f5f5f5;color:#333}
+.btn-danger{background:#f44336;color:#fff;border-color:#f44336}
+.btn-danger:hover{background:#d32f2f;border-color:#d32f2f;color:#fff}
+.btn-text{background:transparent;color:#2196F3;border-color:transparent;padding:8px 12px}
+.btn-text:hover{background:#E3F2FD}
+.btn-sm{padding:4px 10px;font-size:12px}
+.btn-lg{padding:12px 24px;font-size:16px}
+.btn-icon{display:inline-block;width:36px;height:36px;padding:6px;border-radius:50%;text-align:center;line-height:1}
+.btn-icon svg{width:24px;height:24px;vertical-align:middle}
+.btn-icon:hover{background:#f0f0f0}
+
+/* 输入框 */
+.input{display:block;width:100%;padding:8px 12px;font-size:14px;line-height:1.5;color:#333;background:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:border-color .2s,box-shadow .2s;transition:border-color .2s,box-shadow .2s}
+.input:focus{outline:none;border-color:#2196F3;-webkit-box-shadow:0 0 0 3px rgba(33,150,243,.1);box-shadow:0 0 0 3px rgba(33,150,243,.1)}
+.input-lg{padding:12px 16px;font-size:16px}
+.input-label{display:block;margin-bottom:6px;font-size:13px;font-weight:500;color:#666}
+.form-group{margin-bottom:16px}
+
+/* 搜索框 */
+.search-box{position:relative;max-width:400px}
+.search-box .input{padding-left:36px}
+.search-box svg{position:absolute;top:50%;left:10px;width:18px;height:18px;margin-top:-9px;color:#999}
+
+/* 卡片 */
+.card{background:#fff;border:1px solid #e0e0e0;border-radius:8px;padding:20px;margin-bottom:16px}
+.card-title{font-size:16px;font-weight:600;color:#333;margin-bottom:12px}
+.card-text{font-size:14px;color:#666;line-height:1.6}
+
+/* 文件列表 */
+.file-list{background:#fff}
+.file-item{display:block;padding:12px 20px;border-bottom:1px solid #f0f0f0;text-decoration:none;color:inherit;position:relative;-webkit-transition:background .15s;transition:background .15s}
+.file-item:hover{background:#f9f9f9;text-decoration:none}
+.file-item:last-child{border-bottom:none}
+.file-icon{display:inline-block;width:40px;height:40px;vertical-align:middle;margin-right:12px;border-radius:6px;text-align:center;line-height:40px;color:#fff;font-size:12px;font-weight:600}
+.file-icon.folder{background:#FFA726}.file-icon.video{background:#EF5350}.file-icon.audio{background:#AB47BC}
+.file-icon.image{background:#66BB6A}.file-icon.doc{background:#42A5F5}.file-icon.app{background:#78909C}.file-icon.other{background:#90A4AE}
+.file-icon svg{width:22px;height:22px;vertical-align:middle}
+.file-icon img{width:40px;height:40px;border-radius:6px;vertical-align:middle}
+.file-info{display:inline-block;vertical-align:middle;width:60%;width:calc(100% - 60px)}
+.file-name{font-size:14px;font-weight:400;color:#333;margin-bottom:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.file-meta{font-size:12px;color:#999}
+.file-actions{position:absolute;top:50%;right:20px;margin-top:-18px;opacity:0;-webkit-transition:opacity .2s;transition:opacity .2s}
+.file-item:hover .file-actions{opacity:1}
+
+/* 空状态 */
+.empty-state{padding:60px 20px;text-align:center;color:#999}
+.empty-state svg{width:80px;height:80px;margin-bottom:16px;opacity:.3}
+.empty-state-text{font-size:14px;line-height:1.6}
+
+/* 加载 */
+.loading{padding:40px 20px;text-align:center}
+.loading .spinner{margin-bottom:12px}
+.loading-text{font-size:14px;color:#999}
+
+/* Toast */
+.toast-container{position:fixed;top:20px;right:20px;z-index:9999}
+.toast{background:#333;color:#fff;padding:12px 20px;border-radius:6px;margin-bottom:10px;font-size:14px;-webkit-box-shadow:0 4px 12px rgba(0,0,0,.15);box-shadow:0 4px 12px rgba(0,0,0,.15);-webkit-animation:toastIn .3s ease;animation:toastIn .3s ease}
+.toast.success{background:#4CAF50}.toast.error{background:#f44336}.toast.warning{background:#ff9800}
+@-webkit-keyframes toastIn{from{opacity:0;-webkit-transform:translateX(20px)}to{opacity:1;-webkit-transform:translateX(0)}}
+@keyframes toastIn{from{opacity:0;transform:translateX(20px)}to{opacity:1;transform:translateX(0)}}
+
+/* 模态框 */
+.modal-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);z-index:1000;-webkit-animation:fadeIn .2s ease;animation:fadeIn .2s ease}
+.modal-container{position:fixed;top:50%;left:50%;z-index:1001;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-animation:modalIn .2s ease;animation:modalIn .2s ease}
+.modal{background:#fff;border-radius:8px;padding:24px;min-width:320px;max-width:480px;-webkit-box-shadow:0 8px 24px rgba(0,0,0,.2);box-shadow:0 8px 24px rgba(0,0,0,.2)}
+.modal-title{font-size:18px;font-weight:600;color:#333;margin-bottom:16px}
+.modal-body{margin-bottom:20px;font-size:14px;color:#666;line-height:1.6}
+.modal-footer{text-align:right}.modal-footer .btn{margin-left:8px}
+@-webkit-keyframes modalIn{from{opacity:0;-webkit-transform:translate(-50%,-50%) scale(.9)}to{opacity:1;-webkit-transform:translate(-50%,-50%) scale(1)}}
+@keyframes modalIn{from{opacity:0;transform:translate(-50%,-50%) scale(.9)}to{opacity:1;transform:translate(-50%,-50%) scale(1)}}
+
+/* 进度条 */
+.progress{height:4px;background:#e0e0e0;border-radius:2px;overflow:hidden;margin-bottom:8px}
+.progress-bar{height:100%;background:#2196F3;border-radius:2px;-webkit-transition:width .3s ease;transition:width .3s ease}
+
+@media screen and (max-width:768px){
+    .file-info{width:55%;width:calc(100% - 100px)}
+    .file-actions{opacity:1}
+    .toast-container{top:10px;right:10px;left:10px}
+    .modal{min-width:280px;max-width:90%;padding:20px}
+}

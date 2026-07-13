@@ -1,0 +1,63 @@
+/* 轻盘 - 布局 */
+.app{position:relative;width:100%;height:100vh;overflow:hidden}
+
+/* 侧边栏 */
+.sidebar{position:fixed;top:0;left:0;width:240px;height:100%;background:#fff;border-right:1px solid #e0e0e0;overflow-y:auto;z-index:100}
+.sidebar-header{padding:20px;border-bottom:1px solid #f0f0f0}
+.brand{display:block}
+.brand-icon{display:inline-block;width:32px;height:32px;vertical-align:middle;color:#2196F3}
+.brand-icon svg{width:100%;height:100%}
+.brand-name{display:inline-block;vertical-align:middle;margin-left:10px;font-size:20px;font-weight:600;color:#333}
+
+/* 导航 */
+.nav-list{padding:10px 0}
+.nav-item{display:block;padding:12px 20px;color:#666;text-decoration:none;position:relative;-webkit-transition:background .2s,color .2s;transition:background .2s,color .2s}
+.nav-item:hover{background:#f5f5f5;color:#333;text-decoration:none}
+.nav-item.active{background:#E3F2FD;color:#2196F3;font-weight:500}
+.nav-item svg{display:inline-block;width:20px;height:20px;vertical-align:middle;margin-right:10px}
+.nav-item span{vertical-align:middle}
+.badge{position:absolute;top:50%;right:20px;margin-top:-9px;background:#f44336;color:#fff;font-size:11px;font-weight:600;padding:2px 6px;border-radius:10px;min-width:18px;text-align:center}
+
+.sidebar-footer{position:absolute;bottom:0;left:0;right:0;padding:15px 20px;border-top:1px solid #f0f0f0;background:#fff}
+.quota-info{font-size:12px;color:#999}
+.quota-bar{height:4px;background:#e0e0e0;border-radius:2px;overflow:hidden;margin-bottom:8px}
+.quota-fill{height:100%;background:#2196F3;border-radius:2px;-webkit-transition:width .5s ease;transition:width .5s ease}
+.quota-text{line-height:1.4}
+
+/* 主内容 */
+.main{position:absolute;top:0;left:240px;right:0;bottom:0;background:#fafafa;overflow-y:auto;overflow-x:hidden}
+
+/* 页面头部 */
+.page-header{position:relative;padding:20px;background:#fff;border-bottom:1px solid #e0e0e0}
+.page-title{font-size:24px;font-weight:600;color:#333;margin:0}
+.page-actions{position:absolute;top:20px;right:20px}
+
+/* 面包屑 */
+.breadcrumb{padding:12px 20px;background:#fff;border-bottom:1px solid #f0f0f0;font-size:13px;overflow-x:auto;white-space:nowrap}
+.breadcrumb-item{display:inline-block;padding:4px 8px;color:#666;text-decoration:none;border-radius:4px;-webkit-transition:background .2s;transition:background .2s}
+.breadcrumb-item:hover{background:#f0f0f0;color:#333;text-decoration:none}
+.breadcrumb-item.current{color:#333;font-weight:500}
+.breadcrumb-sep{display:inline-block;padding:0 4px;color:#ccc}
+
+/* 底部导航（移动端） */
+.bottom-nav{display:none;position:fixed;bottom:0;left:0;right:0;height:60px;background:#fff;border-top:1px solid #e0e0e0;z-index:100}
+.bottom-nav-item{display:inline-block;width:25%;padding:8px 0;text-align:center;color:#999;text-decoration:none;vertical-align:top;-webkit-transition:color .2s;transition:color .2s}
+.bottom-nav-item:hover,.bottom-nav-item.active{color:#2196F3;text-decoration:none}
+.bottom-nav-item svg{display:block;width:24px;height:24px;margin:0 auto 4px}
+.bottom-nav-item span{display:block;font-size:11px}
+
+/* 响应式 */
+@media screen and (max-width:768px){
+    .sidebar{display:none}
+    .main{left:0;bottom:60px}
+    .bottom-nav{display:block}
+    .page-header{padding:15px}
+    .page-title{font-size:20px}
+    .page-actions{top:15px;right:15px}
+    .breadcrumb{padding:10px 15px}
+}
+@media screen and (max-width:480px){
+    .page-header{padding:12px}
+    .page-title{font-size:18px}
+    .breadcrumb{padding:8px 12px;font-size:12px}
+}
