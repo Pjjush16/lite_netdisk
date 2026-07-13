@@ -1,0 +1,13 @@
+{
+  "name": "litedisk",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "echo 'No frontend build needed - static files served by Tauri'",
+    "build": "echo 'No frontend build needed - static files served by Tauri'",
+    "tauri": "tauri"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.0.0"
+  }
+}
