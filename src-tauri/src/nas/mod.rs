@@ -348,7 +348,7 @@ async fn start_mdns_advertisement(ip: &str, port: u16) {
         &hostname,
         ip,
         port,
-        &[("version=1.0", "app=litedisk"][..])
+        &[("version=1.0", "app=litedisk")][..])
     ) {
         Ok(s) => s,
         Err(_) => return,
