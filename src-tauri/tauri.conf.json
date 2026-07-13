@@ -1,7 +1,8 @@
 {
   "productName": "轻盘",
   "version": "1.0.0",
-  "identifier": "com.litedisk.app",
+  "identifier": "com.litedisk.desktop",
+
   "build": {
     "frontendDist": "../web",
     "devUrl": "http://localhost:1420"
